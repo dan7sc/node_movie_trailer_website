@@ -1,0 +1,168 @@
+
+    <!DOCTYPE html>
+          <html lang="en">
+          <head>
+          <meta charset="utf-8">
+          <title>Fresh Blueberries</title>
+
+          <!-- Boostrap 4 -->
+          <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+          <link rel="stylesheet" href="./styles/style.css">
+          <script src="./scripts/script.js"></script>
+        </head>
+
+  <body>
+    <!-- Trailer Video Modal -->
+    <div class="modal" id="trailer">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a href="#" class="hanging-close" data-dismiss="modal">
+            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          </a>
+          <div class="scale-media" id="trailer-video-container">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Information Video Modal -->
+    <div class="modal" id="info">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          </a>
+          <div id="info-container">
+            <p id="title"></p>
+            <p id="storyline"></p>
+            <p id="genre"></p>
+            <p id="director"></p>
+            <p id="runtime"></p>
+            <p id="rated"></p>
+            <p id="rating"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Page Content -->
+    <div class="navbar navbar-expand" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Fresh Blueberries Movie Trailers</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          
+    <div class="anime col-sm-6 col-md-4 col-lg-3 text-center">
+        <div class="card">
+          <img class="card-img-top" src="http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg" width=220 height=342>
+            <div class="card-body">
+                <div class="card-title">
+                    <h4>Toy Story</h4>
+                    <div class="card-option">
+                        <a id="play-trailer" data-trailer-youtube-id="4KPTXpQehio" data-toggle="modal" data-target="#trailer">Trailer</a>
+                    </div>
+                    <div class="card-option">
+                        <a id="info-data" data-toggle="modal" data-target="#info" data-title="Toy Story" data-storyline="A cowboy doll is profoundly threatened and jealouswhen a new spaceman figure supplants himas top toy in a boy's room." data-released="1995" data-runtime="81 min" data-genre="Animation, Adventure, Comedy" data-director="John Lasseter" data-rated="G" data-rating="8.3/10 (imdbRating)">Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="anime col-sm-6 col-md-4 col-lg-3 text-center">
+        <div class="card">
+          <img class="card-img-top" src="http://upload.wikimedia.org/wikipedia/id/b/b0/Avatar-Teaser-Poster.jpg" width=220 height=342>
+            <div class="card-body">
+                <div class="card-title">
+                    <h4>Avatar</h4>
+                    <div class="card-option">
+                        <a id="play-trailer" data-trailer-youtube-id="5PSNL1qE6VY" data-toggle="modal" data-target="#trailer">Trailer</a>
+                    </div>
+                    <div class="card-option">
+                        <a id="info-data" data-toggle="modal" data-target="#info" data-title="Avatar" data-storyline="A paraplegic marine dispatched to the moon Pandoraon a unique mission becomes torn between following his ordersand protecting the world he feels is his home." data-released="2009" data-runtime="162 min" data-genre="Action, Adventure, Fantasy" data-director="James Cameron" data-rated="PG-13" data-rating="7.8/10 (imdbRating)">Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="anime col-sm-6 col-md-4 col-lg-3 text-center">
+        <div class="card">
+          <img class="card-img-top" src="http://upload.wikimedia.org/wikipedia/en/1/11/School_of_Rock_Poster.jpg" width=220 height=342>
+            <div class="card-body">
+                <div class="card-title">
+                    <h4>School of Rock</h4>
+                    <div class="card-option">
+                        <a id="play-trailer" data-trailer-youtube-id="3PsUJFEBC74" data-toggle="modal" data-target="#trailer">Trailer</a>
+                    </div>
+                    <div class="card-option">
+                        <a id="info-data" data-toggle="modal" data-target="#info" data-title="School of Rock" data-storyline="After being kicked out of a rock band,Dewey Finn becomes a substitute teacherof a strict elementary private school,only to try and turn it into a rock band." data-released="2013" data-runtime="108 min" data-genre="Comedy, Music" data-director="Richard Linklater" data-rated="PG-13" data-rating="7.1/10 (imdbRating)">Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="anime col-sm-6 col-md-4 col-lg-3 text-center">
+        <div class="card">
+          <img class="card-img-top" src="http://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg" width=220 height=342>
+            <div class="card-body">
+                <div class="card-title">
+                    <h4>Ratatouille</h4>
+                    <div class="card-option">
+                        <a id="play-trailer" data-trailer-youtube-id="c3sBBRxDAqk" data-toggle="modal" data-target="#trailer">Trailer</a>
+                    </div>
+                    <div class="card-option">
+                        <a id="info-data" data-toggle="modal" data-target="#info" data-title="Ratatouille" data-storyline="A rat who can cook makes an unusual alliancewith a young kitchen worker at a famous restaurant." data-released="2007" data-runtime="111 min" data-genre="Animation, Adventure, Comedy" data-director="Brad Bird, Jan Pinkava(co-director)" data-rated="G" data-rating="8.0/10 (imdbRating)">Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="anime col-sm-6 col-md-4 col-lg-3 text-center">
+        <div class="card">
+          <img class="card-img-top" src="http://upload.wikimedia.org/wikipedia/en/9/9f/Midnight_in_Paris_Poster.jpg" width=220 height=342>
+            <div class="card-body">
+                <div class="card-title">
+                    <h4>Midnight in Paris</h4>
+                    <div class="card-option">
+                        <a id="play-trailer" data-trailer-youtube-id="FAfR8omt-CY" data-toggle="modal" data-target="#trailer">Trailer</a>
+                    </div>
+                    <div class="card-option">
+                        <a id="info-data" data-toggle="modal" data-target="#info" data-title="Midnight in Paris" data-storyline="While on a trip to Paris with his fiancée's family,a nostalgic screenwriter finds himself mysteriouslygoing back to the 1920s everyday at midnight." data-released="2011" data-runtime="94 min" data-genre="Comedy, Fantasy, Romance" data-director="Woody Allen" data-rated="PG-13" data-rating="7.7/10 (imdbRating)">Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="anime col-sm-6 col-md-4 col-lg-3 text-center">
+        <div class="card">
+          <img class="card-img-top" src="http://upload.wikimedia.org/wikipedia/en/4/42/HungerGamesPoster.jpg" width=220 height=342>
+            <div class="card-body">
+                <div class="card-title">
+                    <h4>Hunger Games</h4>
+                    <div class="card-option">
+                        <a id="play-trailer" data-trailer-youtube-id="PbA63a7H0bo" data-toggle="modal" data-target="#trailer">Trailer</a>
+                    </div>
+                    <div class="card-option">
+                        <a id="info-data" data-toggle="modal" data-target="#info" data-title="Hunger Games" data-storyline="Katniss Everdeen voluntarily takesher younger sister's place in the Hunger Games:a televised competition in which two teenagersfrom each of the twelve Districts of Panem are chosenat random to fight to the death." data-released="2012" data-runtime="142 min" data-genre="Adventure, Sci-Fi, Thriller" data-director="Gary Ross" data-rated="PG-13" data-rating="7.2/10 (imdbRating)">Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+  </body>
+</html>
